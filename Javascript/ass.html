@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>literals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <link rel="icon"type="image/icon"href="#">
+	<style>
+	  body {
+	   margin:60px 500px;
+	   //width:100%;
+	   background-image:linear-gradient(#e55d87,#5fc3e4);
+	   background-repeat:no-repeat;
+	   height:628px;
+	   
+	   
+	  }
+	  p{
+	   font-size:30px;
+	  }
+	  #div{
+	  font-size:20px;
+	  color:yellow;
+	  
+	  }
+	  ol{
+	   margin:10px 5px;
+	   background:black;
+	   color:yellow;
+	   width:70%;
+	   line-height:1.5;
+	   font-size:24px;
+	   padding-left:60px;
+	   
+	  
+	  
+	  }
+	
+	
+	
+	
+	</style>
+  
+  </head>
+	<body>
+	 <p>Querry-descissons</p>
+	 <div id="div">
+	  features of J-Query <img src="up.png " id="up"style="display:none;">
+	  <img src="down.png" id="down" ></div>
+	  <ol  style="display:none">
+	   <li>Javascript libraray</li>
+	   <li>write less do more</li>
+	   <li>plugins</li>
+	   <li> simple and easy</li>
+	   <li> light-weight</li>
+	   <li> css-manupalation</li>
+	   <li> html-manupalation</li>
+	   <li>cross browser support</li>
+	   <li> event handeling</li>
+	   <li>built in animation</li>
+	   <li> ajax support</li>
+	   <li> query base</li>
+	  
+	  
+	  </ol>
+	 
+	 
+	 
+	 
+	  <script src="js/jquery-3.6.1.min.js"></script>
+	  <script>
+	    $("document").ready(function(){
+		$("#down").click(function(){
+		
+		  $("ol").slideDown(2000);
+		  $("#down").hide();
+		  $("#up").show();
+		
+		})
+		$("#up").click(function(){
+		
+		  $("ol").slideUp(3000);
+		$("#up").hide();
+		  $("#down").show();
+		
+		})
+		
+		
+		})
+	  
+	  
+	  </script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- hide show content -->
+	<h1 id="demo">abcdefghijklmnopqrstuvwxyz</h1>
+	<button id="btn" onclick = "showHide()">hide</button>
+	
+	
+	<script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>  
+<script>
+
+	  $("document").ready(function() {
+	    $("#btn").click(function() {
+		  $("#demo").toggle(2000)
+		  var btnA = document.getElementById('btn').innerHTML;
+		  
+		
+		})
+	  })
+	  
+	  function showHide() {
+	    var btnA = document.getElementById('btn').innerHTML;
+		
+		
+		if(btnA == 'hide') {
+		  document.getElementById('btn').innerHTML = 'show'; 
+		}
+		else { 
+		document.getElementById('btn').innerHTML = 'hide';
+		}
+	  }
+	</script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	
+	</body>
+	</html>

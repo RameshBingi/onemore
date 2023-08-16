@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html>  
+<head>  
+<title> Move mouse on image for Zoom In and Zoom Out effect </title>  
+
+<style type="text/css">  
+body  
+{  
+font-family: Arial, Sans-Serif;  
+font-size: 0.75em; 
+////margin:120px 580px; 
+} 
+h1{
+//font-size:70px;
+
+} 
+#imgbike 
+{  
+width: 100%;  
+overflow: hidden;  
+}  
+#imgbike a  
+{  
+position: relative;  
+float: left;  
+margin: 5px;  
+}  
+#imgbike a span  
+{  
+background-repeat: no-repeat;  
+width: 48px;  
+height: 48px;  
+display: none;  
+position: absolute;  
+left: 15px;  
+top: 15px;  
+}  
+#imgbike  
+{  
+border: solid 1px #999;  
+padding: 5px;  
+}  
+</style>  
+</head>  
+<body>  
+<div>  
+<h1> Move mouse on image for Zoom In and Zoom Out effect  
+</h1>  
+<br />  
+<a>  
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMotWyCX-ru95IghBeODjrk4giwFHJGhy8HA&usqp=CAU" alt="bike" id="imgbike" /></a>  
+</div> 
+
+
+<script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>  
+<script type="text/javascript">  
+$(document).ready(function () {  
+$('#imgbike').width(2000);  
+$('#imgbike').mouseover(function () {  
+$(this).css("cursor", "pointer");  
+$(this).animate({ width: "500px" }, 'slow');  
+});  
+$('#imgbike').mouseout(function () {  
+$(this).animate({ width: "1000px" }, 'slow');  
+});  
+});  
+</script>  
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>  
+</html>  
