@@ -1,0 +1,131 @@
+<!doctype html>
+  <html>
+    <head>
+	 <link rel="stylesheet"type="text/css"href="valid.css">
+	 <style>
+	    span
+		{
+		  display:none;
+		
+		}
+	 
+	 </style>
+	
+	</head>
+	
+    <body>
+	  <form>
+	    Enter-Username<input type="text"name="uname"id="uname" onkeyup="valid()">
+		<span id="t" style="color:red">please enter valid charters 6-12 </span><br>
+	    email-Id<input type="email"name="ename"id="ename"onkeyup="valid()"><span id="l" style="color:red">please enter valid charters 6-12 and special letters </span><br>
+		
+	    phone-NO<input type="text"name="num"id="num" onkeyup="valid()" placeholder=+91><span id="k"  style="color:red">please enter you'r mobile-no </span><br>
+	    <div>gender<input type="radio"name="gender"id="male"onchange="valid()">male 
+	    <input type="radio"name="gender"id="female"onchange="valid()">female<br>
+		<span id="a" style="color:red">select any one </span></div>
+	    password<input type="password"name="password"id="pwd"onkeyup="valid()"><span id="j" style="color:red">please enter valid charters 6-12 </span><br>
+	   re-password<input type="password"name="password"id="rpwd"onkeyup="valid()"><span id="b"style="color:red" >enter correct password</span><br>
+	      <input type="submit"name="login" onclick="return main()">
+		  <h3 id="r"></h3>
+	  
+	  </form>
+	    
+		<script>
+		  
+		  var x=document.getElementById("t");
+		  var y=document.getElementById("l");
+		  var z=document.getElementById("k");
+		  var w=document.getElementById("j");
+		  var m=document.getElementById("b");
+		  var m1=document.getElementById("a");
+		  
+		    
+			function main()
+			{
+		  var user=document.getElementById("uname").value;
+		  var mail=document.getElementById("ename").value;
+		  var pno=document.getElementById("num").value;
+		  var gm=document.getElementById("male").checked;
+		  var gf=document.getElementById("female").checked;
+		  var password=document.getElementById("pwd").value;
+		  var repassword=document.getElementById("rpwd").value;
+		  
+		  
+		  
+			  if(user.length<6||user.length>15) 
+			  {
+			    x.style.display="block" ;
+                return false;				
+	          }		
+			
+			  else if(mail.length<6||mail.length>20) 
+			  {
+			    l.style.display="block" ;  
+                 return false;				
+	          }	
+			  else if(pno.length <10) 
+			  {
+			    z.style.display="block" ; 
+                 return false;					
+	          }
+			  
+			  else if (gm==false && gf==false)
+			  {
+                	 m1.style.display="block" ; 
+                 return false;			  
+			  }
+			  
+			  <!-- else if( male==true) -->
+			  <!-- { -->
+			     <!-- m1.style.display="inline" ;  -->
+                 <!-- return false;				 -->
+			  
+			  <!-- } -->
+			  <!-- else if(female==true) -->
+			  <!-- { -->
+			     <!-- m2.style.display="inline" ;  -->
+                 <!-- return false;				 -->
+			  
+			  <!-- } -->
+			   
+			  else if(password.length<6||password.length>15) 
+			  {
+			    w.style.display="block" ;  
+				 return false;	
+	          }	
+			    
+			  else if(password!=repassword) 
+			  { ,;m]ni[bupvo.7a6aq3ws4d5r-o0p'[]]
+			    alert("let do it maan");
+			       m.style.display="block" ; 
+
+				 return false;	
+	          }	
+			   
+			      
+	          
+			
+			}
+			
+			
+		function valid()
+        {
+		 t.style.display="none";
+		 y.style.display="none";
+		 z.style.display="none";
+		 w.style.display="none";
+		 m.style.display="none";
+		 m1.style.display="none";
+		 <!-- m2.style.display="none"; -->
+		 
+		
+		
+		}		
+		
+		
+		</script>
+		
+	
+	</body>
+  
+  </html>
