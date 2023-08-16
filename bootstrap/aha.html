@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+    <title>Aha</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta http-equiv="X-UA-compatible" content="IE=edge">
+ 
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>   
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   
+   <style>
+   .aha{
+    
+	font-size:50px;
+	
+	
+	
+   
+   }
+   
+   
+   .bs-example{
+    	font-size:30px;
+		margin:10px;
+		padding:10px;
+		
+    }
+   
+   .nav{
+   position:fixed;
+   
+   }
+   
+   body{
+    background:black;
+   
+   }
+  
+   
+   
+   
+   
+   </style>
+   
+   
+  
+   </head>
+   
+   
+   <!-- headding -->
+    <body>
+	<!-- <div class="container"> -->
+	<!-- <div class="row"> -->
+  <!-- <div class="col-md-5 col-md-offset-4"></div> -->
+  <!-- <div class="col-md-2 aha"><b>aha</b></div> -->
+  <!-- <div class="col-md-5 col-md-offset-4"></div> -->
+
+
+<!-- navbar -->
+<!-- <div class="col-md-10 "></div> -->
+<!-- <div class="row"> -->
+ <!-- <ul class="nav"> -->
+  <!-- <li class="nav-item"> -->
+    <!-- <a class="nav-link active" href="#">All</a> -->
+  <!-- </li> -->
+  <!-- <li class="nav-item"> -->
+    <!-- <a class="nav-link" href="#">Movies</a> -->
+  <!-- </li> -->
+  <!-- <li class="nav-item"> -->
+    <!-- <a class="nav-link" href="#">Shows</a> -->
+  <!-- </li> -->
+  <!-- <li class="nav-item"> -->
+    <!-- <a class="nav-link disabled">Kids</a> -->
+  <!-- </li> -->
+<!-- </ul> -->
+
+
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class=" navbar-fixed-top"> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-inverse navbar-sticky-top"  >
+
+  <a class="navbar-brand aha"style="color:orange"><b>aha</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shows</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Kids</a>
+      </li>
+      <!-- <li class="nav-item dropdown"> -->
+        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> -->
+          <!-- Dropdown -->
+        <!-- </a> -->
+        <!-- <div class="dropdown-menu"> -->
+          <!-- <a class="dropdown-item" href="#">Action</a> -->
+          <!-- <a class="dropdown-item" href="#">Another action</a> -->
+          <!-- <div class="dropdown-divider"></div> -->
+          <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+        <!-- </div> -->
+      <!-- </li> -->
+      <li class="nav-item">
+        <a class="nav-link disabled">Myaha</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn my-2 my-sm-0" type="submit"style="color:red">SUBSCRIBE</button>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	  &emsp;
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sig in</button>
+	   
+	   
+    </form>
+  </div>
+
+</nav>
+<!-- </div> -->
+
+
+
+
+<!-- sliders -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="https://image-resizer-cloud-api.akamaized.net/image/0E441AF9-EB39-4A16-B48B-61464EB72E97/0-3x1.jpg?width=2165" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://image-resizer-cloud-api.akamaized.net/image/C6D49DC4-C4D5-495B-86C5-AA6EC41CE315/0-3x1.jpg?width=2165" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://image-resizer-cloud-api.akamaized.net/image/149DD995-FEFD-410B-834C-6833CC2E2FDD/0-3x1.jpg?width=2165" class="d-block w-100" alt="...">
+    </div>
+	
+	<div class="carousel-item">
+      <img src="https://image-resizer-cloud-api.akamaized.net/image/1D67B609-AC68-4A94-B80E-D0B8437B5519/0-3x1.jpg?width=2165" class="d-block w-100" alt="...">
+    </div>
+	<div class="carousel-item">
+      <img src="https://image-resizer-cloud-api.akamaized.net/image/5eaf2f18-7d76-494f-9049-695ed74e61bc/0-3x1.jpg?width=2165" class="d-block w-100" alt="...">
+    </div>
+	
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+ <!-- images -->
+ 
+
+ 
+ 
+ 
+
+
+<div class="bs-example">
+    <div class=" d-flex justify-content-between">
+        <button style="border:none">New Releases</button>
+        <button style="border:none">Sea All</button>
+       
+    </div>
+</div>
+<div class="myCarousel">
+    <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+			<div class="row">
+			  <div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/0E441AF9-EB39-4A16-B48B-61464EB72E97/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/149DD995-FEFD-410B-834C-6833CC2E2FDD/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/C6D49DC4-C4D5-495B-86C5-AA6EC41CE315/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/0D1D494F-5E9D-4419-AC3D-193CD11265A1/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/7A414909-F7C7-4884-8A2F-0B247AFA8BCB/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div><div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/9D765C6E-DCB6-4D3F-BF5B-8F7FCEEB65CE/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+             </div>   
+            </div>
+            <div class="carousel-item">
+                
+                <div class="row">
+			  <div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/7B1793B3-56C8-4CCD-8D84-25903048A89A/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/256D2180-CB22-473A-BC33-41BA0A57EB62/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/99DC572C-B208-4047-8925-DD5B6E48D667/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/C27AD6E9-B044-411D-9905-78F368148379/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/F5A38384-B8C0-45F1-AB91-AB43A5CB6E86/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div><div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/82A70C48-49A9-421A-BB67-87605600FCEB/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+             </div>
+            </div>
+			
+        </div>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+ 
+ 
+ 
+ <!-- images1 -->
+ 
+  
+ <div class="bs-example">
+    <div class=" d-flex justify-content-between">
+        <button style="border:none">Blockbuster</button>
+        <button style="border:none">Sea All</button>
+       
+    </div>
+</div>
+
+<div class="myCarousel">
+    <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+			<div class="row">
+			  <div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/E51CB6A8-D3A9-474C-84E7-BDB6B2980239/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/72DD3211-3D3E-4911-92E6-48132F335F5A/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/A2D5FA05-208D-45CC-9394-7AA4BEA8ED8F/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/C95494C7-1FEB-4697-AF56-267BAF635B3A/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/92E6ED76-4BBB-43F9-A08A-586F2B40811A/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div><div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/256D2180-CB22-473A-BC33-41BA0A57EB62/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+             </div>   
+            </div>
+            <div class="carousel-item">
+                
+                <div class="row">
+			  <div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/58873AFE-D16F-4ADD-8EA7-658462587A83/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/08FDB8F8-FEEB-4C2E-B7E2-C44CA4886077/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/F1ED6BFB-7FC6-42AA-89A0-2504F9B62910/0-2x3.jpg?width=2400" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/C27AD6E9-B044-411D-9905-78F368148379/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/008DF131-FFA2-4CE3-A6E0-744D89085A9B/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div><div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/82A70C48-49A9-421A-BB67-87605600FCEB/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+             </div>
+            </div>
+			
+        </div>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+ 
+ 
+ <!-- image3 -->
+ <div class="bs-example">
+    <div class=" d-flex justify-content-between">
+        <button style="border:none">Treading 10</button>
+        <button style="border:none">Sea All</button>
+       
+    </div>
+</div>
+
+<div class="myCarousel">
+    <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+			<div class="row">
+			  <div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/20CD128F-B402-4734-B1AF-56FBE79E465F/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/DC860EBF-C167-4CE9-BD89-755A3B1A730E/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/0D1D494F-5E9D-4419-AC3D-193CD11265A1/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/7A414909-F7C7-4884-8A2F-0B247AFA8BCB/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/AB4E98DA-CAA5-48C0-81A8-DB20084EE026/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div><div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/F1AFA21D-A62C-4950-B303-FC7242559971/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+             </div>   
+            </div>
+            <div class="carousel-item">
+                
+                <div class="row">
+			  <div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/ECE0631E-D9E1-45ED-8631-C803D2E80424/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/08FDB8F8-FEEB-4C2E-B7E2-C44CA4886077/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/B890CBBD-4869-4D11-8740-AFD01DF72377/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/92E6ED76-4BBB-43F9-A08A-586F2B40811A/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+			<div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/008DF131-FFA2-4CE3-A6E0-744D89085A9B/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div><div class="card col-md-2" style="width: 18rem;">
+                 <img src="https://image-resizer-cloud-api.akamaized.net/image/82A70C48-49A9-421A-BB67-87605600FCEB/0-2x3.jpg?width=240" class="card-img-top" alt="...">
+            </div>
+             </div>
+            </div>
+			
+        </div>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+ <br>
+ <br>
+ 
+ 
+ <div class="card">
+  <div class="card-body" style="text-align:center;color:red">
+    All Copy Rights Belongs to 😉 aha 😉 2023!! 
+  </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	</body>
+ 
+ </html>
