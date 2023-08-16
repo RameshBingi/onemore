@@ -1,0 +1,117 @@
+<!DOCTYPE html >
+  <html lan="tamil">
+    <head>
+	 <style>
+	   *{
+	    margin:0px auto;
+		padding:0px;
+	    //border:2px solid red;
+	   }
+	   body{
+	     background-image:linear-gradient(#feac5e,#c779d0);
+		 background-repeat:no-repeat;
+	   }
+	   form{
+	    background:gray;
+	    // border:2px solid blue;
+		 margin:90px auto;
+		// height:200px;
+		 width:25%;
+		 border-radius:20px;
+		 padding:20px;
+		 
+		 
+	   }
+	    
+		
+		
+	   
+	   input[type="text"]{
+	        width:100%;
+			height:40px;
+        margin-bottom: 32px;
+        border-radius: 7px;
+					   
+					   }
+	     
+	   
+	   input[type="button"]{
+	      width:0px;
+		  padding:30px;
+		  margin:0px 20px
+		 // padding-left:30px;
+		  border-radius:10px;
+		  background:black;
+		  color:white;
+		  margin:4px 0px;
+		  box-shadow:2px 2px white;
+		  font-size:22px;
+		  
+	   }
+	    
+	    input[type="button"]:hover{
+		 color:black;
+		 background:yellow
+		  
+		
+		}
+input[type="button"].cl{
+   background:white;
+   color:red;
+   box-shadow:2px 2px black;
+
+}	
+input[type="text"]{
+  background:lightblue;
+
+}	
+		  
+		 
+		
+		
+		
+	 
+	 
+	 </style>
+	
+	</head>
+    <body>
+    <form action=""method ="post" name="calc">
+	<h1>Calculator</h1>
+	 <input type ="text" name="a"><br>
+	 
+	 <input type="button"name="-" value="-" onclick="document.calc.a.value+='-'" class="cl">
+	 <input type="button"name="+" value="+" onclick="document.calc.a.value+='+'" class="cl">
+	 <input type="button"name="*" value="*" onclick="document.calc.a.value+='*'" class="cl">
+	 <input type="button"name="/" value="/" onclick="document.calc.a.value+='/'" class="cl">
+	 <input type="button"name="b" value="🔙" onclick="document.calc.a.value=document.calc.a.value.slice(0,-1)" class="cl">
+	 
+	 <br>
+	 
+	 <input type="button"name="1" value="1" onclick="document.calc.a.value+='1'">
+	 <input type="button"name="2" value="2" onclick="document.calc.a.value+='2'">
+	 <input type="button"name="3" value="3" onclick="document.calc.a.value+='3'">
+	 <input type="button"name="4" value="4" onclick="document.calc.a.value+='4'">
+	 <input type="button"name="5" value="5" onclick="document.calc.a.value+='5'">
+	 <br>
+	 <input type="button"name="6" value="6" onclick="document.calc.a.value+='6'">
+	 <input type="button"name="7" value="7" onclick="document.calc.a.value+='7'">
+	 <input type="button"name="8" value="8" onclick="document.calc.a.value+='8'">
+	 <input type="button"name="9" value="9" onclick="document.calc.a.value+='9'">
+	 <input type="button"name="0" value="0" onclick="document.calc.a.value+='0'">
+	  <br>
+	  
+	 <input type="button"name="=" value="=" onclick="document.calc.a.value=eval(document.calc.a.value)" class="cl">
+	 <input type="button"name="%" value="%" onclick="document.calc.a.value+='%'" class="cl">
+	 <input type="button"name="C" value="Clear " onclick="document.calc.a.value=' '" style="width:55%; background:red;color:black;font-size:16px" >
+	 
+
+	</form>	
+	
+	
+	
+	
+	
+	</body>
+  
+  </html>
