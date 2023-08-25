@@ -1,0 +1,3 @@
+[submodule "aws-devops-zero-to-hero"]
+	path = aws-devops-zero-to-hero
+	url = git@github.com:iam-veeramalla/aws-devops-zero-to-hero.git
